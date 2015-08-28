@@ -120,7 +120,7 @@ ProcessUtility_callback(Node *parsetree,
 {
 	elog( DEBUG1, "STORMSTATS: using plugin." );
 
-	standard_ProcessUtility(parsetree, queryString, params, isTopLevel, dest,
+	standard_ProcessUtility(parsetree, queryString, isTopLevel, params, dest,
 #ifdef PGXC
 							sentToRemote,
 #endif /* PGXC */
